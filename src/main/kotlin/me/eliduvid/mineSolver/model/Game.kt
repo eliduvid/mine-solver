@@ -26,7 +26,7 @@ interface Game {
     val allCells: List<Cell>
 
     /**
-     * Are coordinates are valid for a cell on this board
+     * Are coordinates valid for a cell on this board
      */
     fun hasCell(coordinates: Coordinates): Boolean =
         (coordinates.x >= 0) and (coordinates.x < x) and (coordinates.y >= 0) and (coordinates.y < y)
